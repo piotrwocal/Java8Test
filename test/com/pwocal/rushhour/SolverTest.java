@@ -126,7 +126,6 @@ public class SolverTest {
     public void testFindAllMovesSimpleBoard() {
         Solver.showBoard( Solver.firstBoard );
         System.out.println( " ===>>> ");
-
         Solver.findAllMoves( new Solver.Move( Solver.firstBoard )).forEach( move ->
             { System.out.println( move );
                 Solver.showBoard( move.getNewBoard() );
