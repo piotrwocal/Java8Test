@@ -158,15 +158,6 @@ public class Solver {
         return bestSolution;
     }
 
-    private static int getSolutionSize( Move solution ) {
-        int result = 1;
-        while( solution.previousMove != null ) {
-            result++;
-            solution = solution.previousMove;
-        }
-        return result;
-    }
-
 
     public static boolean isFinish( String board ) {
         return board.charAt( 17 ) == 'X';
